@@ -1,0 +1,32 @@
+/*type of selector
+1.simple
+2.attribute
+3.pseudo
+4.combinator
+5.elements */
+h3{
+    color: blueviolet;
+    background: blue;
+}
+/* class selector */
+.head{
+    color: red;
+}
+/* id slector */
+#head1{
+    color: beige;
+    background: purple;
+}
+/* universal selector */
+*{
+    padding-left: 10px;
+    text-align: center;
+}
+/* attribute selector */
+[href=""]{
+    color: red;
+}
+
+/* git add .
+git commit -m "first commit"
+git push origin main */
