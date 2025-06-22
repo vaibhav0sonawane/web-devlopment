@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation bar</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+        integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
+            body{
+                background: lightgrey;
+            }
+            nav{
+                display: flex;
+                justify-content: space-between;
+                font-weight: bolder;
+                /* margin: 10px; */
+                background:white;
+                padding: 5px;
+                border-radius: 5px;
+            }
+            h4{
+                font-size: 20px;
+                padding: 10px;
+                color: black;
+                margin-left: 30px;
+            }
+            ul{
+                display: flex;
+                font-size:large;
+                margin-right: 30px;
+            }
+            li{
+                margin: 10px;
+                padding: 5px;
+                list-style-type: none;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        </style>
+</head>
+
+<body>
+    <nav>
+        <div class="Logo">
+            <h4>LOGO</h4>
+            </div>
+            <div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Featured</a></li>
+                <li><a href="">Contact Me</a></li>
+                <li><i class="bi bi-search"></i></li>
+                <li><i class="bi bi-person-fill"></i></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>
