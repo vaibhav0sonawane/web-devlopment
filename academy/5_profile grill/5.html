@@ -6,52 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Features and Services</title>
     <style>
-        *{
+        * {
             padding: 0px;
             margin: 0px;
         }
-        img{
+
+        img {
             height: 100px;
             width: 100px;
-          
+
         }
-        body{
-            background:linear-gradient(rgba(153, 232, 243, 0.295),rgba(32, 198, 248, 0.342))
-           
+
+        body {
+            background: linear-gradient(rgba(153, 232, 243, 0.295), rgba(32, 198, 248, 0.342))
         }
-        section{
-             height: 100vh;
+
+        section {
+            height: 100vh;
         }
-        .headbox{
+
+        .headbox {
             text-align: center;
-            color:rgb(0, 183, 255);
+            color: rgb(0, 183, 255);
             margin: 10px;
-           
+
         }
-        
-        .mainbox{
-           display: flex;
+
+        .mainbox {
+            display: flex;
             justify-content: center;
-            
+
         }
-        .box1{
+
+        .box1 {
             text-align: center;
-           height: 270px;
-           width: 150px;
-           margin: 10px;
-           padding: 30px;
-           
-           background: white;
-           border-radius: 5%;
-           
+            height: 270px;
+            width: 150px;
+            margin: 10px;
+            padding: 30px;
+
+            background: white;
+            border-radius: 5%;
+
         }
-        button{
+
+        button {
             padding: 5px;
             margin: 10px;
             border-radius: 10px;
             width: 80px;
             background: rgb(0, 183, 255);
-            color: antiquewhite;   
+            color: antiquewhite;
+        }
+
+        @media(max-width:677px) {
+            .mainbox {
+                display: block;
+                align-items: center;
+                justify-items: center;
+            }
+            .div{
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -60,34 +76,39 @@
     <section>
         <div class="headbox">
             <h2 style="padding-top: 50px;">Features</h2>
-        <h1>Our Features & Services</h1>
-         </div>
-    <div class="mainbox">
-        <div class="box1">
-            <img src=https://thumbs.dreamstime.com/z/two-people-logo-linked-people-team-logo-vector-two-people-together-two-people-logo-linked-together-logo-vector-ai-174549018.jpg?w=360 alt="">
-       
-        <h3 style="padding-bottom: 15px;color: rgb(0, 183, 255);">Communication</h3>
-        <p style="color: rgba(0, 0, 0, 0.705);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae facere quos illo.</p>
-        <a href=""><button>MORE</button></a>
+            <h1>Our Features & Services</h1>
         </div>
-        <div class="box1">
-            <img src=https://miro.medium.com/v2/resize:fit:800/0*F5b6pMiIZfcS0nRb.png alt="">
-       
-        <h3 style="padding-bottom: 15px;color: rgb(0, 183, 255);">Inspired Design</h3>
-        <p style="color: rgba(0, 0, 0, 0.705);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae facere quos illo.</p>
-        <a href=""><button>MORE</button></a>
-        </div>
-        <div class="box1">
-            <img src=https://img.freepik.com/premium-vector/customer-rating-icon-illustration_138676-400.jpg alt="">
-       
-        <h3 style="padding-bottom: 15px;color: rgb(0, 183, 255);">Happy customer</h3>
-        <p style="color: rgba(0, 0, 0, 0.705);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae facere quos illo.</p>
-        <a href=""><button>MORE</button></a>
-        </div>
+        <div class="mainbox">
+            <div class="box1">
+                <img src=https://thumbs.dreamstime.com/z/two-people-logo-linked-people-team-logo-vector-two-people-together-two-people-logo-linked-together-logo-vector-ai-174549018.jpg?w=360
+                    alt="">
+
+                <h3 style="padding-bottom: 15px;color: rgb(0, 183, 255);">Communication</h3>
+                <p style="color: rgba(0, 0, 0, 0.705);">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repudiandae facere quos illo.</p>
+                <a href=""><button>MORE</button></a>
+            </div>
+            <div class="box1">
+                <img src=https://miro.medium.com/v2/resize:fit:800/0*F5b6pMiIZfcS0nRb.png alt="">
+
+                <h3 style="padding-bottom: 15px;color: rgb(0, 183, 255);">Inspired Design</h3>
+                <p style="color: rgba(0, 0, 0, 0.705);">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repudiandae facere quos illo.</p>
+                <a href=""><button>MORE</button></a>
+            </div>
+            <div class="box1">
+                <img src=https://img.freepik.com/premium-vector/customer-rating-icon-illustration_138676-400.jpg alt="">
+
+                <h3 style="padding-bottom: 15px;color: rgb(0, 183, 255);">Happy customer</h3>
+                <p style="color: rgba(0, 0, 0, 0.705);">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repudiandae facere quos illo.</p>
+                <a href=""><button>MORE</button></a>
+            </div>
         </div>
         <div>
             <h4 style="text-align: center;padding-top: 30px;text-decoration: underline;">Image by freepik</h4>
         </div>
     </section>
 </body>
+
 </html>

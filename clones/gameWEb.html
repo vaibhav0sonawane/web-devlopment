@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game webpage</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+        integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        margin:0px;
+    }
+
+     .mainsection {
+        background-color: rgba(0, 0, 255, 0.89);
+        height: 120vh;
+        border-bottom-left-radius: 20%;
+        border-bottom-right-radius: 20%;
+    } 
+
+    .main {
+        display: flex;
+        justify-content: space-evenly;
+        font-weight: bolder;
+        font-size: larger;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        width: 100%; 
+        background: rgba(0, 0, 255, 0.863);;
+         position:fixed; 
+         top: -4px;
+         /* box-shadow: 0px 2px 5px; */
+    }
+
+    .logo {
+        display: flex;
+    }
+
+    ul {
+        display: flex;
+        text-align: center;
+        margin-top: 20px;
+        gap: 90px;
+        margin-left: 180px;
+        font-weight: bolder;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .button {
+        margin-top: 10px;
+    }
+
+    button {
+        height: 50px;
+        width: 120px;
+        border-radius: 20px;
+        font-weight: bolder;
+        color: white;
+        background: rgb(223, 3, 40);
+    }
+
+    .heading {
+        font-size: 37px;
+        position: relative;
+        top: 14px;
+        left: -111px;
+        color: white;
+
+    }
+
+    .first {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 80px;
+        color: white;
+        flex-wrap: wrap;
+        flex-grow: 980px;
+    }
+
+    .Fleftbox {
+        margin-top: 80px;
+        width: 30%;
+        font-size: 2rem;
+    }
+
+    .text1 {
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: lighter;
+    }
+
+    .text2 {
+        margin-bottom: 30px;
+        border-bottom: 4px solid red;
+    }
+
+    .type {
+        height: 69px;
+        width: 80%;
+        border-radius: 50px;
+    }
+
+    .typebutton {
+        height: 72px;
+        width: 160px;
+        border-radius: 40px;
+        position: relative;
+        background: rgb(223, 3, 40);
+        left: 165px;
+        top: -72px;
+    }
+
+    ::placeholder {
+        font-size: medium;
+        padding: 30px;
+    }
+
+    p {
+        margin-bottom: 40px;
+    }
+
+    .image1 {
+        margin-top: 80px;
+        border-radius: 10%;
+    }
+
+    .logoimg {
+        height: 80px;
+        width: 220px;
+
+        background: rgba(0, 0, 255, 0.664);
+    }
+
+    .secondmain {
+        display: flex;
+        gap: 40px;
+        margin-left: 40px;
+        margin-top: 120px;
+        padding: 20px;
+    }
+
+    .one {
+        text-align: center;
+        justify-items: center;
+        font-size: 20px;
+        width: 150px;
+        padding: 30px;
+        border: 2px solid black;
+        height: 180px;
+        border-radius: 40px;
+        background: white;
+    }
+
+    .bi {
+        font-size: 80px;
+        padding: 10px;
+        border-radius: 50%;
+        border: 2px solid black;
+        background: blue;
+        color: white;
+    }
+
+    .code {
+        margin-top: 20px;
+    }
+
+    .navsecond {
+        display: flex;
+        justify-content: space-around;
+    }
+    .navThird {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .trend {
+        font-size: 20px;
+        color: rgb(223, 3, 40);
+    }
+
+    .trending {
+        font-size: 4rem;
+    }
+
+    .trendB {
+        margin-top: 20px;
+        height: 70px;
+        width: 160px;
+        border-radius: 60px;
+        font-size: larger;
+    }
+    .info{
+        display: flex;
+       justify-content: space-around;
+    }
+    .bi-bag-fill{
+        font-size: xx-large;
+        background: rgb(223, 3, 40)000;
+        padding: 10px;
+        border-radius: 50%;
+        position: relative;
+        top: 10px;
+        color: white;
+    }
+    .trendingmain{
+        display: flex;
+        gap: 16px;
+        margin: 40px;
+        margin-left: 40px;
+        margin-bottom: 10%;
+        padding: 0px;
+        width: 18.1%;
+        height: 100%;
+        background: rgba(128, 128, 128, 0.356);
+        align-items: center;
+    }
+    .Mmain{
+        display: flex;
+        text-align: center;
+        gap: 16px;
+        margin: 40px;
+        margin-left: 8%;
+        margin-bottom: 10%;
+        width:11.5%;
+        height: 100%;
+        background: rgba(128, 128, 128, 0.356);
+    }
+    .Mimg{
+        border-radius: 30px; 
+    }
+    .Timg{
+        border-radius: 20px;
+    }
+    .Mbutton{
+        margin-top: 20px;
+    }
+    .Categories{
+        margin: 10px;
+        padding: 20px;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .catOne{
+        margin-bottom: 20px;
+    color:rgb(223, 3, 40);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .catsec{
+        font-size:50px;
+    }
+    .Tcategories{
+        text-align: center;
+        padding: 10px;
+        background: blue;
+        width: 14%; 
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        align-items: center;
+        height: 240px;
+        margin-left: 10px;
+    }
+    
+    .Tcategoriessec{
+        display: flex;
+        gap: 5%;
+    }
+    .Categoriesimg{
+        border-radius: 10px;
+        margin-top: 5px;
+        width: 90%;
+    }
+</style>
+
+<body>
+    <section class="mainsection">
+        <nav class="main">
+            <div class="logo">
+                <div> <img class="logoimg"
+                        src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/logo.png" alt="">
+                </div>
+                <div class="heading">
+                    <h1>LUGX</h1>
+                </div>
+            </div>
+
+            <div class="function">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Our Shop</a></li>
+                    <li><a href="">Product Details</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="button"><button>SIGN IN</button></div>
+        </nav>
+        <section class="first">
+            <div class="Fleftbox">
+                <h4 class="text1">WELCOME TO LUGX</h4>
+                <h1 class="text2">BEST GAMING SITE EVER !</h1>
+                <p>LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. You can download
+                    and
+                    use this layout for commercial purposes. Please tell your friends about TemplateMo.</p>
+                <input type="text" placeholder="Type Something" class="type"><button class="typebutton">search
+                    here</button>
+            </div>
+            <div class="Frightbox">
+                <img class="image1"
+                    src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/banner-image.jpg"
+                    alt="">
+            </div>
+        </section>
+        <section class="second">
+            <div class="secondmain">
+                <div class="one">
+                    <i class="bi bi-cloud-download"></i>
+                    <h2 class="code">FREE STORAGE</h2>
+                </div>
+                <div class="one">
+                    <i class="bi bi-cloud-download"></i>
+                    <h2 class="code">FREE STORAGE</h2>
+                </div>
+                <div class="one">
+                    <i class="bi bi-cloud-download"></i>
+                    <h2 class="code">FREE STORAGE</h2>
+                </div>
+                <div class="one">
+                    <i class="bi bi-cloud-download"></i>
+                    <h2 class="code">FREE STORAGE</h2>
+                </div>
+            </div>
+        </section>
+        <nav class="navsecond">
+            <div>
+                <h2 class="trend">TRENDING</h2>
+                <h2 class="trending">Trending Games</h2>
+            </div>
+            <div>
+                <button class="trendB">VIEW ALL</button>
+            </div>
+        </nav>
+        <section>
+            <div class="trendingmain">
+                <div class="Tfirst">
+                    <img class="Timg" src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/trending-01.jpg"
+                        alt="">
+                    <div class="info">
+                        <div>
+                            <h4>Action</h4>
+                            <h2>Assasin Creed</h2>
+                        </div>
+                        <div><i class="iconinfo bi-bag-fill"></i></div>
+                    </div>
+                </div>
+                <div class="Tfirst">
+                    <img class="Timg" src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/trending-01.jpg"
+                        alt="">
+                    <div class="info">
+                        <div>
+                            <h4>Action</h4>
+                            <h2>Assasin Creed</h2>
+                        </div>
+                        <div><i class="iconinfo bi-bag-fill"></i></div>
+                    </div>
+                </div>
+                <div class="Tfirst">
+                    <img class="Timg" src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/trending-01.jpg"
+                        alt="">
+                    <div class="info">
+                        <div>
+                            <h4>Action</h4>
+                            <h2>Assasin Creed</h2>
+                        </div>
+                        <div><i class="iconinfo bi-bag-fill"></i></div>
+                    </div>
+                </div>
+                <div class="Tfirst">
+                    <img class="Timg" src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/trending-01.jpg"
+                        alt="">
+                    <div class="info">
+                        <div>
+                            <h4>Action</h4>
+                            <h2>Assasin Creed</h2>
+                        </div>
+                        <div><i class="iconinfo bi-bag-fill"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav class="navThird">
+            <div>
+                <h2 class="trend">TOP GAMES</h2>
+                <h2 class="trending">Most Played</h2>
+            </div>
+            <div>
+                <button class="trendB">VIEW ALL</button>
+            </div>
+        </nav>
+        <section>
+            <div class="Mmain">
+                <div class="Mfirst">
+                    <img class="Mimg" src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/top-game-02.jpg"
+                        alt="">
+                    <div class="Minfo">
+                            <h4>Adventure</h4>
+                            <h2>Assasin Creed</h2>
+                            <button class="Mbutton">EXPLORE</button>
+                </div>    
+            </div>
+                <div class="Mfirst">
+                    <img class="Mimg" src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/top-game-02.jpg"
+                        alt="">
+                    <div class="Minfo">
+                            <h4>Adventure</h4>
+                            <h2>Assasin Creed</h2>
+                            <button class="Mbutton">EXPLORE</button>
+                </div>    
+            </div>
+                <div class="Mfirst">
+                    <img class="Mimg" src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/top-game-02.jpg"
+                        alt="">
+                    <div class="Minfo">
+                            <h4>Adventure</h4>
+                            <h2>Assasin Creed</h2>
+                            <button class="Mbutton">EXPLORE</button>
+                </div>    
+            </div>
+                <div class="Mfirst">
+                    <img class="Mimg" src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/top-game-02.jpg"
+                        alt="">
+                    <div class="Minfo">
+                            <h4>Adventure</h4>
+                            <h2>Assasin Creed</h2>
+                            <button class="Mbutton">EXPLORE</button>
+                </div>    
+            </div>
+                <div class="Mfirst">
+                    <img class="Mimg" src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/top-game-02.jpg"
+                        alt="">
+                    <div class="Minfo">
+                            <h4>Adventure</h4>
+                            <h2>Assasin Creed</h2>
+                            <button class="Mbutton">EXPLORE</button>
+                </div>    
+            </div>
+                <div class="Mfirst">
+                    <img class="Mimg" src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/top-game-02.jpg"
+                        alt="">
+                    <div class="Minfo">
+                            <h4>Adventure</h4>
+                            <h2>Assasin Creed</h2>
+                            <button class="Mbutton">EXPLORE</button>
+                </div>    
+            </div>
+        </section>
+        <nav class="Categories">
+        <h5 class="catOne">CATEGORIES</h5>
+        <h1 class="catsec"> Top Categories</h1>
+        </nav>
+        <section class="Scategories">
+            <div class="Tcategoriessec">
+                <div class="Tcategories">
+                <h1>Action</h1>
+                 <img class="Categoriesimg" src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/categories-05.jpg" alt="">
+            </div>
+                <div class="Tcategories">
+                <h1>Action</h1>
+                 <img class="Categoriesimg" src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/categories-05.jpg" alt="">
+            </div>
+                <div class="Tcategories">
+                <h1>Action</h1>
+                 <img class="Categoriesimg" src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/categories-05.jpg" alt="">
+            </div>
+                <div class="Tcategories">
+                <h1>Action</h1>
+                 <img class="Categoriesimg" src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/categories-05.jpg" alt="">
+            </div>
+                <div class="Tcategories">
+                <h1>Action</h1>
+                 <img class="Categoriesimg" src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/categories-05.jpg" alt="">
+            </div> 
+            </div>
+            <section class="endsec">
+                <div class="EMdiv">
+                    <div class="endone">
+                    
+                    </div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </section>
+        </section>
+    </section>
+</body>
+</html>
