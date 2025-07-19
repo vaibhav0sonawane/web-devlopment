@@ -86,7 +86,7 @@ img {
 
 #Header-section ul .search-bar-select .search-bar-main .textbox {
     height: 36px;
-    width: 10rem;
+    width: 410px;
     
 }
 
@@ -195,8 +195,6 @@ img {
     .bi-three-dots{
         display:block;
     }
-    
-
 }
 
 /* --------------Head-section-END------------------ */
