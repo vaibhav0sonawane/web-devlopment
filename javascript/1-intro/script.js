@@ -1,6 +1,6 @@
 alert("Hello World");
 console.log("Code is running");
-console.log("ENter a number");
+console.log("Enter a number");
 var a = prompt("Enter a  number");
 var isTrue = confirm("Are you sure you want to check this number")
 if (a % 2 == 0) {

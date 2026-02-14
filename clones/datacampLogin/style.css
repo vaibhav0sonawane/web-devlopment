@@ -1,0 +1,12 @@
+body{
+    color: beige;
+    background: rgb(24, 24, 133);
+}
+nav {
+    display: flex;
+    
+}
+nav ul{
+    display: flex;
+    padding-left: 30%;
+}

@@ -5,8 +5,10 @@ var c = "vaibhav";
 console.log(a + b);
 console.log(typeof a, typeof b, typeof c);
 
-// Let= it is a block scope which is use in block value 
-// eg first let a= 5 
+// Let= using let variables can't be redeclared but can be reassigned 
+// var= using var variables can be redeclared and reassigned   
+//const: using const variables can't be redeclared and can't be reassigned
+// eg first let a= 5  
 {
     let a = 66
     console.log(a);//value of a here will be 66
@@ -42,9 +44,9 @@ console.log(typeof x, typeof k, typeof m, typeof q, typeof n);
 
 //---------------------Object-------------------------------------------
 let o ={
-    "name":"Harry",
+    "name":"vaibhav",
     "job code":5600,
     "doing job":false
-}//use to group values of same topics or objects
+};//use to group values of same topics or objects
 console.log(o);
 o.projects="2";//add sub-values

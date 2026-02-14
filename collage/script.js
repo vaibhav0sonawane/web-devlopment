@@ -1,0 +1,10 @@
+let a=parseInt(prompt("enter first number:"));
+let b=parseInt(prompt("enter second number:"));
+addition=a+b;
+subtraction=a-b;
+multiple=a*b;
+division=a/b;
+console.log("Addition:",addition);
+console.log("subtraction:",subtraction);
+console.log("multiple:",multiple);
+console.log("division:",division);
