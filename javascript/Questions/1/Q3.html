@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradeing System</title>
+</head>
+
+<body>
+    <h1>WAP which converts mark obtain by a student into percentage</h1>
+    <script>
+        per = prompt("Enter percentage obtained by students:");
+        document.write(typeof (per));
+        Grade;
+        document.write(typeof (Grade));
+        if (per >= 90 && per <= 100) {
+            Grade = "A+";
+        } elseif(per >= 70 && per <= 89)
+        {
+            Grade ="A";
+        } elseif(per >= 60 && per <= 69)
+        {
+            Grade = "B+";
+        } elseif(per >= 50 && per <= 59)
+        {
+            Grade ="B";
+        } elseif(per >= 40 && per <= 49)
+        {
+            Grade ="C";
+        } elseif(per >= 35 && per <= 39)
+        {
+            Grade ="D";
+        } elseif(per <= 30 && per >= 0)
+        {
+            Grade ="F";
+        }
+    document.write(Grade);
+    </script>
+
+</body>
+
+</html>
