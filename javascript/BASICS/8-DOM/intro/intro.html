@@ -1,10 +1,16 @@
-<!DOCTYPE html>
-<html>
+<!-- // what is DOM:
+When a web page is loaded,the browser create a document object model (DOM) of the page
+which contain all the HTML structure(tags in object form),CSS and JS -->
+<!-- ->to access HTML tag into JS -->
+<!-- // -> USe to change webpage dynamically(according to user) -->
+ <!DOCTYPE html>
+<head>
     <title>HTML Form</title>
+     <link rel="stylesheet" href="intro.css">
 </head>
 <body style="text-align: center;">
-    <h2>Students Registration Form</h2>
-    <form style="border: 2px solid black ; width: 300px; margin: auto; padding: 10px;" > 
+    <h2 class="heading">Students Registration Form</h2>
+    <form id="info"> 
         Name: <input type="text" name="name"><br><br>
         Email: <input type="email" name="email"><br><br>
         password: <input type="password" name="password"><br><br>
@@ -12,7 +18,7 @@
         <input type="radio" name="gender">Male
         <input type="radio" name="gender">Female<br><br>
         course:
-        <select>
+        <select id="select">
             <option >BCA</option>
             <option >BSc</option>
             <option >B.com</option>
@@ -26,7 +32,9 @@
         <input type="checkbox">Sports <br><br>
         <input type="checkbox">Coding 
         <input type="checkbox">Sleeping <br><br>
-        <input type="submit" value="Submit">
+        <button type="button">Submit</button>
+
     </form>
+    <script src="intro.js"></script>
 </body>
-</html>
+</html> 
