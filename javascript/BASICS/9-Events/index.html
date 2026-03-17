@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Mode">
+    <button id="btn1" > switch Mode</button>
+    </div>
+    <form action="/submit_page" method="POST" id="form1">
+        <!-- Text Input Field -->
+         <h1>Review FORM</h1>
+        <div id="howwer">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" >
+        </div>
+
+        <!-- Password Input Field -->
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" >
+        </div>
+
+        <!-- Email Input Field -->
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" >
+        </div>
+
+        <!-- Textarea for larger input -->
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
+        </div>
+
+        <!-- Checkbox Input -->
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="subscribed">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+
+        <!-- Select (Dropdown) Input -->
+        <div>
+            <label for="country">Choose a country:</label>
+            <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+            </select>
+        </div>
+        
+        <!-- Submit Button -->
+        <div>
+            <button  type="submit">Submit</button>
+        </div>
+    </form>
+   
+    <script src="script.js"> </script>
+</body>
+</html>

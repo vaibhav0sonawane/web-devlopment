@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+}
+div{
+    background: gray;
+    padding: 10px;
+    margin: 50px auto;
+    width: 250px;
+}
+p{
+    color: blue;
+}
